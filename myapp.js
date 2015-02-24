@@ -1,6 +1,6 @@
 angular.module("myApp", [])
   .controller("MultiplicationCtrl", function ($scope, $attrs) {
-    $scope.numberLimit = $attrs.initialNumberLimit || 10;
+    $scope.numberLimit = parseInt($attrs.initialNumberLimit,10) || 10;
 
     $scope.numbers = function () {
       var numbers = [];
